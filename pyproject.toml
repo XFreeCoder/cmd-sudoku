@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "cmd-sudoku"
+version = "0.1.0"
+description = ""
+authors = ["thomaszdxsn <thomaszdxsn@icloud.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "cmd_sudoku"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+textual = "^0.1.18"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

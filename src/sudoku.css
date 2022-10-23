@@ -1,0 +1,13 @@
+Container {
+  layout: grid;
+  grid-size: 9 9;
+  grid-gutter: 0 0;
+}
+
+CellWidget {
+  border: solid green;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  content-align: center middle;
+}

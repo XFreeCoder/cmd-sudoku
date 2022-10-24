@@ -1,3 +1,4 @@
+from sudoku import generate_puzzle
 from widgets import CellWidget
 from itertools import chain
 
@@ -13,5 +14,7 @@ class GamePlay():
         return list(chain.from_iterable(self.widgets))
 
     def generate_puzzle(self):
-        for widget in self.flatten_widgets:
-            widget.update_num(1)
+        puzzle = generate_puzzle()
+        for index, digit in enumerate(puzzle.values()):
+            self.flatten_widgets[index].update_num(
+                int(digit) if len(digit) == 1 else 0)
